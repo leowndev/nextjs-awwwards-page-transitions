@@ -1,3 +1,4 @@
+import { TransitionLink } from "@/components/TransitionLink";
 import Link from "next/link";
 
 export default function Header() {
@@ -6,15 +7,15 @@ export default function Header() {
       <nav>
         <ul className="flex gap-8">
           <li>
-            <Link href="/">Home</Link>
+            <TransitionLink href="/" label="Home" />
           </li>
 
           <li>
-            <Link href="/about">About</Link>
+            <TransitionLink href="/about" label="About" />
           </li>
 
           <li>
-            <Link href="/contact">Contact</Link>
+            <TransitionLink href="/contact" label="Contact" />
           </li>
         </ul>
       </nav>
